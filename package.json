@@ -1,0 +1,22 @@
+{
+  "name": "parcel-sideeffects-flag-bug-repro",
+  "version": "1.0.0",
+  "repository": "git@github.com:Andarist/parcel-sideeffects-flag-bug-repro.git",
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "parcel": "2.0.0-nightly.447",
+    "prettier": "^2.2.0",
+    "rollup": "^2.33.3",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "build": "yarn build:parcel && yarn build:rollup && yarn build:webpack",
+    "build:parcel": "parcel build ./src/index.html --dist-dir dist/parcel",
+    "build:rollup": "rollup -c",
+    "build:webpack": "webpack"
+  },
+  "prettier": {}
+}

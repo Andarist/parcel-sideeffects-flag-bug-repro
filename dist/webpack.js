@@ -1,0 +1,1 @@
+(()=>{"use strict";var s,o=Object.prototype.hasOwnProperty;console.log((s={css:""},void(o.call(s,"css")||console.log("has css prop"))))})();
